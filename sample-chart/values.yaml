@@ -1,0 +1,49 @@
+# Default values for sample-app
+
+replicaCount: 3
+
+image:
+  repository: nginx
+  pullPolicy: IfNotPresent
+  tag: "1.21"
+
+config:
+  nodeEnv: production
+  logLevel: info
+  database:
+    host: localhost
+    port: 5432
+    name: myapp
+
+service:
+  type: ClusterIP
+  port: 80
+
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 50m
+    memory: 64Mi
+
+ingress:
+  enabled: true
+  className: nginx
+  hosts:
+    - host: app.example.com
+      paths:
+        - path: /
+          pathType: Prefix
+
+postgresql:
+  enabled: true
+  auth:
+    username: myuser
+    database: myapp
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 10
+

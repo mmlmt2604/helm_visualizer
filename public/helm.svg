@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="helmGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f5fdc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#277df0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <circle cx="50" cy="50" r="45" fill="url(#helmGrad)"/>
+  <path d="M50 20 L30 40 L30 65 L50 80 L70 65 L70 40 Z" fill="none" stroke="white" stroke-width="3"/>
+  <circle cx="50" cy="50" r="8" fill="white"/>
+  <line x1="50" y1="42" x2="50" y2="25" stroke="white" stroke-width="2"/>
+  <line x1="42" y1="50" x2="32" y2="42" stroke="white" stroke-width="2"/>
+  <line x1="58" y1="50" x2="68" y2="42" stroke="white" stroke-width="2"/>
+  <line x1="45" y1="56" x2="35" y2="65" stroke="white" stroke-width="2"/>
+  <line x1="55" y1="56" x2="65" y2="65" stroke="white" stroke-width="2"/>
+  <line x1="50" y1="58" x2="50" y2="75" stroke="white" stroke-width="2"/>
+</svg>
+
